@@ -1,9 +1,150 @@
 .imgdar {
-    width: 100px;
-    height: 100px;
+    width: 470px;
+    height: 630px;
+    position: relative;
+}
+
+.phone-img img {
+    width: 250px;
+    height: 540px;
+    position: absolute;
+    top: 25px;
+    right: 60px;
+}
+
+.card-body img.card-tittle {
+    width: auto;
+    height: 75px;
+}
+
+.card {
+    width: 350px;
+    box-shadow: none !important;
+    border: 1px solid #dbdbdb !important;
+    padding: 20px;
+}
+
+.md-outline-margin {
+    margin-top: 30px !important;
+    margin-bottom: 8px !important;
+}
+
+.md-outline-mb {
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+}
+
+* input {
+
+    width: 250px;
+    height: 20px;
 }
 
 .xamitd3 img {
     width: 100px;
     height: 100px;
+}
+
+.btn.btn-sm {
+    font-size: 0.8rem;
+    font-weight: 800 !important;
+}
+
+.labal-color {
+    color: #737373 !important;
+    font-size: 14px !important;
+}
+
+.card-foter .btn {
+    width: 100%;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 400;
+    color: #fff !important;
+    background-color: #7ab3f4 !important;
+    border: none !important;
+    box-shadow: none;
+    box-sizing: border-box;
+    margin: 0 !important;
+    position: relative;
+}
+
+.card-foter .btn:hover {
+    color: #fff !important;
+    background-color: #7ab3f4 !important;
+    box-shadow: none;
+}
+
+.carh-hr-p {
+    font-size: 14px;
+    color: #737373;
+    position: absolute;
+    right: 161px;
+    top: 290px;
+}
+
+.card-hr::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: absolute;
+    left: 40px;
+    top: 300px;
+}
+
+.card-hr::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: absolute;
+    right: 40px;
+    top: 300px;
+}
+
+.facebook-text {
+    color: #3d5081;
+    font-size: 16px;
+}
+
+.bottem-card img {
+    width: 136px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.lest-instgram a {
+    font-size: 13px;
+    color: #737373;
+    padding: 7px;
+}
+
+.lest-instgram a:hover {
+    color: #737373;
+    border-bottom: 1px solid #737373;
+}
+
+.phone-img #changeImage {
+    opacity: 1;
+    transition: opacity s ease-in-out;
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    .instagram-md-center {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 767.98px) {
+    .instagram-md-center {
+        display: flex;
+        justify-content: center;
+    }
 }

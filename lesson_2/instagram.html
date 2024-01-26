@@ -6,29 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instagram</title>
     <link rel="stylesheet" href="instagram.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="mdb.lite.min.css">
+    <link rel="stylesheet" href="mdb.min.css">
+    <link rel="shortcut icon" href="./img/unnamed.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 d-none d-lg-block text-right px-lg-0">
                 <img class="imgdar"
                     src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones-2x.png?__makehaste_cache_breaker=73SVAexZgBW"
                     alt="">
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">instagram</h5>
-                    <input type="text" name="" id="">
-                    <input type="password" name="" id="">
-                    <button>login</button>
+                <div class="phone-img">
+                    <img id="changeImage" src="img/img2.png" alt="">
                 </div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-12 px-lg-0 instagram-md-center">
+                <form action="" class="">
+                    <div class="card card-signup ">
+
+                        <div class="card-body text-center">
+
+                            <img class="card-tittle" src="./img/img3.png" class="logo" />
+
+                            <div class="md-form md-outline md-outline-margin ">
+                                <input type="text" id="username" class="form-control">
+                                <label class="labal-color" for="username">Username,E-mail,phone number</label>
+                            </div>
+                            <div class="md-form md-outline md-outline-mb">
+                                <input type="password" id="password" class="form-control">
+                                <label class="labal-color" for="password">Password</label>
+                            </div>
+                            <div class="card-foter text-right d-flex mt-3">
+                                <button type="button" class="btn btn-outline-primary btn-sm">login</button>
+                            </div>
+                            <div class="card-hr">
+                                <p class="carh-hr-p">OR</p>
+                            </div>
+                            <div class="mt-5">
+                                <label for="">
+                                    <a class="facebook-text" href="https://www.facebook.com/">
+                                        <i class="fa-brands fa-square-facebook"></i>
+                                        log in with Facebook
+                                    </a>
+                                </label>
+                            </div>
+                            <div class="mt-2">
+                                <a href="" style="color: #143667;font-size: 14px;">Forget password?</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card  text-center mt-3">
+                        <p class="mb-0" style="font-size: 15px;">Don't have an account? <a class="" href="">Sign up</a>
+                        </p>
+
+                    </div>
+                    <div class="card bottem-card text-center" style="border: none !important;">
+                        <span class="mb-2">Get the app</span>
+                        <div>
+                            <img src="./img/c5Rp7Ym-Klz.png" alt="">
+                            <img src="./img/Yfc020c87j0.png" alt="">
+                        </div>
+                    </div>
+                </form>
+
 
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 text-center lest-instgram">
+                <a href="">Meta</a>
+                <a href="">About</a>
+                <a href="">Blog</a>
+                <a href="">Jobs</a>
+                <a href="">Help</a>
+                <a href="">API</a>
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">
+                    Locations</a>
+                <a href="">Instagram Lite</a>
+                <a href="">Threads</a>
+                <a href="">Contact Uploading & Non-Users</a>
+                <a href="">Meta Verified</a>
+            </div>
+            <div class="col-12 text-center lest-instgram mt-2">
+                <a href="">English<i class="fa-light fa-chevron-down pl-1"></i></a>
+                <a href="">© 2024 Instagram from Meta</a>
+            </div>
+        </div>
     </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/mdb.lite.min.js"></script>
+    <script src="./js/mdb.min.js"></script>
+    <script>
+        // Define an array of image sources
+        var imageSources = ["img/img1.png", "img/img2.png", "img/img4.png", "img/img5.png"];
+
+        // Get the image element
+        var image = document.getElementById("changeImage");
+
+        // Counter to keep track of the current image index
+        var currentIndex = 0;
+
+        // Function to change the image
+        function changeImage() {
+            // Hide the image
+            image.classList.add("hidden");
+            // Change the image source
+            image.src = imageSources[currentIndex];
+
+
+            // Delay for 2 seconds (2000 milliseconds)
+            setTimeout(function () {
+                // Change the image source
+                image.src = imageSources[currentIndex];
+
+                // Increment the index for the next image
+                currentIndex = (currentIndex + 1) % imageSources.length;
+
+                // Show the image
+                image.classList.remove("hidden");
+            }, 2000);
+        }
+
+        // Call the changeImage function every 2 seconds
+        setInterval(changeImage, 2000);
+
+    </script>
 </body>
 
 </html>
