@@ -5,3 +5,88 @@ body {
     background-repeat: no-repeat;
     background-position: right center;
 }
+
+.navbar {
+    box-shadow: none !important;
+}
+
+.navbar .navbar.navbar-light .breadcrumb .nav-item .nav-link,
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: aliceblue !important;
+}
+
+.navbar-brand i {
+    color: #fff;
+    font-size: 33px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar .collapse label a {
+    font-size: 17px !important;
+    font-weight: 500;
+    color: #fff !important;
+}
+
+.navbar .collapse label a:hover {
+    opacity: 0.7;
+}
+
+.navbar .collapse a i {
+    font-size: 12px !important;
+    font-weight: 400;
+    color: #87888b !important;
+}
+
+.navbar .collapse a:hover i {
+    vertical-align: -1px;
+}
+
+.git-serch-input {
+    border-radius: 6px;
+    width: 316px;
+    height: 32px;
+    border: 1px solid #666d75;
+    background-color: rgba(46, 55, 74, .82) !important;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.git-serch-input span {
+    color: #cacbcf;
+}
+
+.git-serch-icon {
+
+    color: #666d75;
+}
+
+.git-serch-input-gudrat {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid #666d75;
+    color: #989a9c;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.git-serch-input-Signin button {
+    color: #ffffff;
+    background-color: transparent !important;
+}
+
+.git-serch-input-border {
+    border-radius: 6px;
+    border: 1px solid #d1d7dd;
+    padding: 4px 8px;
+}
+
+.git-serch-input-border-no {
+    border: none !important;
+}

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+:root {
+  --main-gray: #e9e8e8;
+  --gray2: #bbbbbc;
+  --gray3: #f0f1f1;
+  --gray4: #f5f5f5;
+  --main-blue: #6f94e6;
+  --main-red: #c52934;
+  --hover-red: #fb95ab;
+}
+
+html {
+  font-family: "Montserrat";
+}
+
+a:hover {
+  color: var(--main-red);
+  text-decoration: none;
+}
+
+/* post-content - start */
+.post-content {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 15px;
+  text-align: inherit;
+  text-transform: initial;
+  color: #222222;
+  padding-bottom: 20px;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.post-content p img,
+.post-content img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.post-content table {
+  width: 100% !important;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.post-content table > tbody > tr > td,
+.post-content table > tbody > tr > th,
+.post-content table > tfoot > tr > td,
+.post-content table > tfoot > tr > th,
+.post-content table > thead > tr > td,
+.post-content table > thead > tr > th {
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin: 0;
+}
+
+.post-content iframe {
+  max-width: 100%;
+}
+/* post-content - end */
