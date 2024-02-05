@@ -32,9 +32,10 @@ body {
 
 .navbar .collapse label a:hover {
     opacity: 0.7;
+
 }
 
-.navbar .collapse a i {
+.navbar .collapse a .nav-github-i {
     font-size: 12px !important;
     font-weight: 400;
     color: #87888b !important;
@@ -212,4 +213,82 @@ button {
 .github-button-img {
     display: flex;
     justify-content: space-between;
+}
+
+
+
+.navbar .collapse ul li .github-nav-li-i i {
+    font-size: 24px !important;
+    margin-top: -10px !important;
+
+}
+
+.navbar .collapse ul li .github-nav-li-i {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.navbar .collapse .github-dropdown {
+    list-style: none;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    opacity: 2;
+    border-radius: 6px;
+    height: 0;
+    overflow: hidden;
+}
+
+.navbar .collapse ul li .github-nav-li-text {
+    height: 64px;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.navbar .collapse ul li .github-nav-li-text h5 {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+
+
+.navbar .collapse ul li .github-nav-li-text .github-nav-li-text-p {
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #868d96;
+}
+
+.navbar .collapse ul li a:hover {
+    color: #4489f7;
+}
+
+.navbar .collapse ul li a .github-nav-li-text label:hover p {
+    color: #4489f7;
+}
+
+.navbar .collapse ul li .github-dropdown li a {
+    position: relative;
+}
+
+.github-nav-hr {
+    width: 170px;
+    height: 4px;
+    background-color: #868d96;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 140px;
+    top: 85px;
+}
+
+.github-nav-li-right {
+    margin-left: 100px;
+}
+
+.nav-link-github:hover .github-dropdown {
+    height: 170px;
+
 }

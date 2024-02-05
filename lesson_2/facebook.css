@@ -1,0 +1,68 @@
+body {
+    background-color: #f0f2f5;
+}
+
+.facebook {
+    margin-top: 170px;
+}
+
+.facebook .facebook-row {
+    .facebook-left {
+        h1 img {
+            height: 106px;
+            margin-left: -29px;
+        }
+
+        p {
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-size: 28px;
+            font-weight: normal;
+            line-height: 32px;
+            width: 500px;
+            color: #1c1e21;
+        }
+    }
+
+    .facebook-right {
+        .card {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 6px;
+
+        }
+
+        .card {
+            form input {
+                height: 52px;
+                padding: 14px 16px;
+                margin: 6px 0;
+                border: 1px solid #dddfe2;
+                border-radius: 6px;
+            }
+
+            form .facebook-right-button {
+                margin-top: 12px;
+                height: 48px;
+                background: #3975ea !important;
+                color: #fff !important;
+                border-radius: 6px;
+                border: none !important;
+            }
+
+            form .facebook-card-button {
+                padding: 12px 16px;
+                background-color: #65b543 !important;
+                color: #fff;
+                border: none !important;
+                border-radius: 6px;
+            }
+
+            form input::placeholder {
+                font-size: 16px;
+                color: #91949b;
+            }
+
+
+        }
+    }
+}

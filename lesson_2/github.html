@@ -23,30 +23,69 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown nav-link-github">
                     <label for="">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown"
                             aria-expanded="false">
                             Product
-                            <i class="fa-thin fa-chevron-down"></i>
+                            <i class="fa-thin fa-chevron-down nav-github-i"></i>
                         </a>
                     </label>
+                    <!-- dropdown-menu -->
+                    <ul class="github-dropdown" style="background-color: #fff; padding-left: 0;">
+                        <li class="d-flex"><a class="dropdown-item d-flex" href="#">
+                                <div class="github-nav-li-i">
+                                    <i class="fa-light fa-message-captions"></i>
+                                </div>
+                                <div class="github-nav-li-text">
+                                    <label for="" class="github-nav-li-text-lab">
+                                        <h5 class="mb-0">Actions</h5>
+                                        <p class="mb-1 github-nav-li-text-p">
+                                            Automate any workflow
+                                        </p>
+                                    </label>
+                                </div>
 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
+                            </a>
+                            <a href="" class="dropdown-item d-flex github-nav-li-right">
+                                <div class="d-flex align-items-center ">
+                                    <p>Explore</p>
+                                </div>
+                            </a>
+
                         </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li class="d-flex"><a class="dropdown-item d-flex mt-0" href="#">
+                                <div class="github-nav-li-i">
+                                    <i class="fa-light fa-message-captions"></i>
+                                </div>
+                                <div class="github-nav-li-text">
+                                    <label for="" class="github-nav-li-text-lab">
+                                        <h5 class="mb-0">Actions</h5>
+                                        <p class="mb-1 github-nav-li-text-p">
+                                            Automate any workflow
+                                        </p>
+                                    </label>
+
+                                </div>
+
+                            </a>
+                            <a href="" class="dropdown-item d-flex github-nav-li-right">
+                                <div class="d-flex align-items-center ">
+                                    <p>Explore</p>
+                                </div>
+                            </a>
+
+                        </li>
+                        <div class="github-nav-hr"></div>
                     </ul>
+
                 </li>
                 <li class="nav-item dropdown">
                     <label for="">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                             aria-expanded="false">
                             Solutions
-                            <i class="fa-thin fa-chevron-down"></i>
+                            <i class="fa-thin fa-chevron-down nav-github-i"></i>
                         </a>
                     </label>
 
@@ -64,7 +103,7 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                             aria-expanded="false">
                             Open Source
-                            <i class="fa-thin fa-chevron-down"></i>
+                            <i class="fa-thin fa-chevron-down nav-github-i"></i>
                         </a>
                     </label>
 
@@ -87,7 +126,8 @@
             </ul>
             <form class="d-flex">
 
-                <div class="git-serch-input d-flex align-items-center ">
+                <div class="git-serch-input d-flex align-items-center editable" id="editableDiv"
+                    onclick="convertToInput()">
                     <div>
                         <i class="fa-light fa-magnifying-glass git-serch-icon pl-2 pr-1"></i>
                         <span>Search or jump to...</span>
@@ -162,5 +202,29 @@
     <script src="./js/mdb.lite.min.js"></script>
     <script src="./js/mdb.min.js"></script>
 </body>
+<!-- <script>
+    function convertToInput() {
+        var inputElement = document.createElement("input");
+        var divContent = document.getElementById("editableDiv").innerText;
+        inputElement.value = divContent;
+        document.getElementById("editableDiv").replaceWith(inputElement);
+        inputElement.focus();
+        inputElement.addEventListener("blur", revertToDiv);
+    }
+    function revertToDiv(event) {
+        var divElement = document.createElement("div");
+        // 获取 input 元素的值
+        var inputValue = event.target.value;
+
+        // 设置 div 元素的内容为 input 元素的值
+        divElement.innerText = inputValue;
+
+        // 将 input 元素替换掉原来的 input 元素
+        event.target.replaceWith(divElement);
+
+        // 当 div 元素再次被点击时，调用 convertToInput 函数将其转换为 input 元素
+        divElement.addEventListener("click", convertToInput);
+    }
+</script> -->
 
 </html>

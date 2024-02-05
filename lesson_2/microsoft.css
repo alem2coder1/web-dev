@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.microsoft .container-xxl {
+    .microsoft-nav {
+        height: 54px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: auto;
+    }
+
+    .microsoft-nav ul {
+        list-style: none !important;
+        display: flex;
+        height: auto;
+    }
+
+    ul li a {
+        display: inline-block;
+        color: #262626;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    ul li a:hover {
+        border-bottom: 2px solid #262626;
+    }
+
+    .nav-ul-right li a {
+        color: #262626;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
