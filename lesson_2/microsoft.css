@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* nav */
 .microsoft .container-xxl {
     .microsoft-nav {
         height: 54px;
@@ -32,5 +33,29 @@
         color: #262626;
         font-size: 15px;
         font-weight: 400;
+    }
+}
+
+/* nav end */
+/* body */
+.microsoft-img .microsoft-header {
+    .microsoft-heade-gif {}
+
+    .microsoft-heade-gif img.animate-img {
+        height: 455px;
+        width: 1450px;
+        margin-left: 10px;
+    }
+
+    .icon-microsoft {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+    }
+
+    .icon-microsoft i {
+        font-size: 16px;
+        padding: 0 16px;
+
     }
 }
