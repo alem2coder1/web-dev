@@ -1,0 +1,12 @@
+.container .row {
+    .col-12 {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .card {
+        margin-top: 100px;
+        width: 500px;
+    }
+}

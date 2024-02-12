@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="uoloadfile.css">
+</head>
+<body>
+<label>
+    <div class="card">
+        <div class="card-tite">
+            <input type="text" name="" id="input-value" value="">
+            <button class="input-add">add</button>
+        </div>
+        <div class="card-body">
+            <ul class="card-ul">
+
+            </ul>
+            <input type="file" onchange="upload(this.files)" style="left:-9999px;position:absolute;" />
+            <span style="color: #29b6f6">上传</span>
+        </div>
+
+    </div>
+
+
+
+</label>
+
+
+<script src="uoloadfile.js"></script>
+
+<script>
+
+    function upload(f) {
+        for (var i = 0; i < f.length; i++) {
+            var reader = new FileReader();
+            reader.readAsDataURL(f[i]);
+            reader.onload = function (e) {
+                var base64Img = e.target.result;
+                console.log(base64Img ,"base64路径")
+            }
+        }
+    }
+</script>
+</body>
+</html>
