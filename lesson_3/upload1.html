@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .done {
+            text-decoration: line-through;
+            opacity: 0.5;
+        }
+
+        .delete-btn {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Todo List</h1>
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Add new todo">
+        <button type="submit">Add</button>
+    </form>
+    <ul id="todo-list"></ul>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('todo-form');
+        const input = document.getElementById('todo-input');
+        const todoList = document.getElementById('todo-list');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const todoText = input.value.trim();
+            if (todoText === '') return;
+
+            const todoItem = createTodoItem(todoText);
+            todoList.appendChild(todoItem);
+
+            input.value = '';
+        });
+
+        function createTodoItem(text) {
+            const li = document.createElement('li');
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            const span = document.createElement('span');
+            span.textContent = text;
+            const deleteButton = document.createElement('button');
+            deleteButton1.textContent = '🗑️'; // Sets the text content to a trash can emoji
+            deleteButton1.style.color = 'red';
+            deleteButton.classList.add('delete-btn');
+
+            li.appendChild(checkbox);
+            li.appendChild(span);
+            li.appendChild(deleteButton);
+
+            checkbox.addEventListener('change', function () {
+                if (checkbox.checked) {
+                    span.classList.add('done');
+                } else {
+                    span.classList.remove('done');
+                }
+            });
+
+            deleteButton.addEventListener('click', function () {
+                li.remove();
+            });
+
+            return li;
+        }
+    });
+</script>
+
+</body>
+</html>

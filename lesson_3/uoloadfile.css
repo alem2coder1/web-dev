@@ -15,9 +15,10 @@ label{
     width: 300px;
     padding: 15px;
 }
-#input-value{
+#todo-input{
     width: 85%;
     height: 24px;
+    padding-left: 8px;
 }
 
 .card-tite{
@@ -30,4 +31,27 @@ label{
     list-style: none;
     border: 1px solid #EEEEEE;
     padding-left: 8px;
+}
+.input-add{
+    width: 32px;
+    background-color: #00acc1;
+    border: none;
+    border-radius: 6px;
+}
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+li {
+    margin-bottom: 10px;
+    display: flex; /* Add flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Add spacing between checkbox and text */
+}
+
+span {
+    flex-grow: 1; /* Allow the text to take up remaining space */
 }
