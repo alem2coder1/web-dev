@@ -1,4 +1,3 @@
-// Selecting elements
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('todo-form');
     const input = document.getElementById('todo-input');
@@ -7,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         const todoText = input.value.trim();
-        if (todoText === '') return;
+        if (todoText === '' || todoText.toLowerCase() === 'enter') return; // 添加条件判断
 
         const todoItem = createTodoItem(todoText);
         todoList.appendChild(todoItem);
