@@ -1,8 +1,8 @@
 <div>
   <p>
-    <span>{{ product.name }}</span>
-    <span>{{ product.likes }}</span>
+    <span class="likesbtn">{{ product.name }}</span>
+    <span class="likesbtn">{{ product.likes }}</span>
   </p>
-  <button (click)="like(product.id)">Like</button>
-  <button (click)="remove(product.id)">Remove</button>
+  <button (click)="like(product.id)" class="likes">Like</button>
+  <button (click)="remove(product.id)" class="likes">Remove</button>
 </div>

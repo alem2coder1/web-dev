@@ -10,6 +10,7 @@
         <h3 class="colorloke">{{ product.name }}</h3>
         <img [src]="product.imgurl" alt="{{ product.name }}">
         <p class="colorloke">💖Likes: {{ product.likes }}</p>
+        
       </div>
       <app-product-list *ngIf="selectedCategory" [category]="selectedCategory" ></app-product-list>
 
