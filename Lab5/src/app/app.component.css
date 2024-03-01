@@ -1,0 +1,21 @@
+.container{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .type a{
+  text-decoration: none;
+  color: #249194;
+  padding: 5px 10px;
+  border: 1px solid #7ba672;
+}
+.container .type a:hover{
+  color: darkgreen;
+}
+.container .type{
+  padding: 10px 15px;
+  background-color: antiquewhite;
+}
+.colorloke{
+  color: #418c8f;
+}

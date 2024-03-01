@@ -1,0 +1,21 @@
+
+
+
+
+<div class="container">
+  <div *ngFor="let category of categories" (click)="selectCategory(category)" class="type">
+    <a href="#"> {{ category.name }} </a>
+    <div *ngIf="selectedCategory === category">
+      <div *ngFor="let product of category.products">
+        <h3 class="colorloke">{{ product.name }}</h3>
+        <img [src]="product.imgurl" alt="{{ product.name }}">
+        <p class="colorloke">💖Likes: {{ product.likes }}</p>
+      </div>
+      <app-product-list *ngIf="selectedCategory" [category]="selectedCategory" ></app-product-list>
+
+    </div>
+  </div>
+
+
+</div>
+

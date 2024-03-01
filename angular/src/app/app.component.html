@@ -1,28 +1,74 @@
-<div class="card">
-  <div class="card-img">
-    <a href="https://www.mi.com/shop/buy/detail?product_id=19683">
-      <img ngSrc="../220831140011151695.jpg" src="../220831140011151695.jpg" alt="">
-    </a>
-
-  </div>
-  <div class="card-title">
-    <a href="">
-      <p>Xiaomi 14 Ultra</p>
-    </a>
-  </div>
-  <div class="card-description">
-    <p>「全款预售中！至高24期免息，2月22日赠小米尊享礼盒，加购摄影套装优惠300元」</p>
-  </div>
-  <div class="card-price">
-    <p>6999 元</p>
-  </div>
-  <div class="card-rating">
-    <form action="" id="reviewForm">
-      <textarea id="reviewContent" placeholder="请输入您的评价内容"></textarea><br>
-      <input type="number" id="reviewRating" placeholder="请输入评分（1-5）" min="1" max="5"><br>
-      <button type="submit">提交评价</button>
-    </form>
-  </div>
+<!-- app.component.html -->
+<div *ngFor="let category of categories" (click)="selectCategory(category)">
+  {{ category.name }}
 </div>
-<input type="text" placeholder="enter">
-<button ></button>
+<app-product-list *ngIf="selectedCategory" [category]="selectedCategory"></app-product-list>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="card">-->
+<!--  <div class="card-img">-->
+<!--    <a href="https://www.mi.com/shop/buy/detail?product_id=19683">-->
+<!--      <img ngSrc="../220831140011151695.jpg" src="../220831140011151695.jpg" alt="">-->
+<!--    </a>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  </div>-->
+<!--  <div class="card-title">-->
+<!--    <a href="">-->
+<!--      <p>Xiaomi 14 Ultra</p>-->
+<!--    </a>-->
+<!--  </div>-->
+<!--  <div class="card-description">-->
+<!--    <p>「全款预售中！至高24期免息，2月22日赠小米尊享礼盒，加购摄影套装优惠300元」</p>-->
+<!--  </div>-->
+<!--  <div class="card-price">-->
+<!--    <p>6999 元</p>-->
+<!--  </div>-->
+<!--  <div class="card-rating">-->
+<!--    <form action="" id="reviewForm">-->
+<!--      <textarea id="reviewContent" placeholder="请输入您的评价内容"></textarea><br>-->
+<!--      <input type="number" id="reviewRating" placeholder="请输入评分（1-5）" min="1" max="5"><br>-->
+<!--      <button type="submit">提交评价</button>-->
+<!--    </form>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<input type="text" placeholder="enter">-->
+<!--<button ></button>-->

@@ -1,0 +1,377 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "web-dev": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/web-dev",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "web-dev:build:production"
+            },
+            "development": {
+              "buildTarget": "web-dev:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "web-dev:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "lab_5": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/lab_5",
+      "sourceRoot": "projects/lab_5/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/lab_5",
+            "index": "projects/lab_5/src/index.html",
+            "browser": "projects/lab_5/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/lab_5/tsconfig.app.json",
+            "assets": [
+              "projects/lab_5/src/favicon.ico",
+              "projects/lab_5/src/assets"
+            ],
+            "styles": [
+              "projects/lab_5/src/styles.css"
+            ],
+            "scripts": [],
+            "server": "projects/lab_5/src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "projects/lab_5/server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "lab_5:build:production"
+            },
+            "development": {
+              "buildTarget": "lab_5:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "lab_5:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/lab_5/tsconfig.spec.json",
+            "assets": [
+              "projects/lab_5/src/favicon.ico",
+              "projects/lab_5/src/assets"
+            ],
+            "styles": [
+              "projects/lab_5/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "labwork_5": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/labwork_5",
+      "sourceRoot": "projects/labwork_5/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/labwork_5",
+            "index": "projects/labwork_5/src/index.html",
+            "browser": "projects/labwork_5/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/labwork_5/tsconfig.app.json",
+            "assets": [
+              "projects/labwork_5/src/favicon.ico",
+              "projects/labwork_5/src/assets"
+            ],
+            "styles": [
+              "projects/labwork_5/src/styles.css"
+            ],
+            "scripts": [],
+            "server": "projects/labwork_5/src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "projects/labwork_5/server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "labwork_5:build:production"
+            },
+            "development": {
+              "buildTarget": "labwork_5:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "labwork_5:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/labwork_5/tsconfig.spec.json",
+            "assets": [
+              "projects/labwork_5/src/favicon.ico",
+              "projects/labwork_5/src/assets"
+            ],
+            "styles": [
+              "projects/labwork_5/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "labwork5": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/labwork5",
+      "sourceRoot": "projects/labwork5/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/labwork5",
+            "index": "projects/labwork5/src/index.html",
+            "browser": "projects/labwork5/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/labwork5/tsconfig.app.json",
+            "assets": [
+              "projects/labwork5/src/favicon.ico",
+              "projects/labwork5/src/assets"
+            ],
+            "styles": [
+              "projects/labwork5/src/styles.css"
+            ],
+            "scripts": [],
+            "server": "projects/labwork5/src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "projects/labwork5/server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "labwork5:build:production"
+            },
+            "development": {
+              "buildTarget": "labwork5:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "labwork5:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/labwork5/tsconfig.spec.json",
+            "assets": [
+              "projects/labwork5/src/favicon.ico",
+              "projects/labwork5/src/assets"
+            ],
+            "styles": [
+              "projects/labwork5/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "92aa8b41-a7ca-47b0-af3f-b4ec7d627f57"
+  }
+}
