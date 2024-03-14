@@ -9,7 +9,8 @@
     "test": "ng test",
     "serve:ssr:lab_5": "node dist/lab_5/server/server.mjs",
     "serve:ssr:labwork_5": "node dist/labwork_5/server/server.mjs",
-    "serve:ssr:labwork5": "node dist/labwork5/server/server.mjs"
+    "serve:ssr:labwork5": "node dist/labwork5/server/server.mjs",
+    "serve:ssr:lab6": "node dist/lab6/server/server.mjs"
   },
   "private": true,
   "dependencies": {
