@@ -814,6 +814,270 @@
           }
         }
       }
+    },
+    "my-angular-app": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/my-angular-app",
+      "sourceRoot": "projects/my-angular-app/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/my-angular-app",
+            "index": "projects/my-angular-app/src/index.html",
+            "browser": "projects/my-angular-app/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/my-angular-app/tsconfig.app.json",
+            "assets": [
+              "projects/my-angular-app/src/favicon.ico",
+              "projects/my-angular-app/src/assets"
+            ],
+            "styles": [
+              "projects/my-angular-app/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "my-angular-app:build:production"
+            },
+            "development": {
+              "buildTarget": "my-angular-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "my-angular-app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/my-angular-app/tsconfig.spec.json",
+            "assets": [
+              "projects/my-angular-app/src/favicon.ico",
+              "projects/my-angular-app/src/assets"
+            ],
+            "styles": [
+              "projects/my-angular-app/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "lessn": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/lessn",
+      "sourceRoot": "projects/lessn/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/lessn",
+            "index": "projects/lessn/src/index.html",
+            "browser": "projects/lessn/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/lessn/tsconfig.app.json",
+            "assets": [
+              "projects/lessn/src/favicon.ico",
+              "projects/lessn/src/assets"
+            ],
+            "styles": [
+              "projects/lessn/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "lessn:build:production"
+            },
+            "development": {
+              "buildTarget": "lessn:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "lessn:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/lessn/tsconfig.spec.json",
+            "assets": [
+              "projects/lessn/src/favicon.ico",
+              "projects/lessn/src/assets"
+            ],
+            "styles": [
+              "projects/lessn/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "les": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/les",
+      "sourceRoot": "projects/les/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/les",
+            "index": "projects/les/src/index.html",
+            "browser": "projects/les/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/les/tsconfig.app.json",
+            "assets": [
+              "projects/les/src/favicon.ico",
+              "projects/les/src/assets"
+            ],
+            "styles": [
+              "projects/les/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "les:build:production"
+            },
+            "development": {
+              "buildTarget": "les:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "les:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/les/tsconfig.spec.json",
+            "assets": [
+              "projects/les/src/favicon.ico",
+              "projects/les/src/assets"
+            ],
+            "styles": [
+              "projects/les/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   },
   "cli": {
