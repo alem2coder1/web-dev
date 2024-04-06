@@ -1,15 +1,19 @@
 #top-bar{
-  background-color: #FCEDDA;
+  background-color: #58e58b;
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   padding: 5px 5px;
   box-shadow: 2px 2px rgb(219, 219, 219);
 }
 
 .menu{
-  margin-right: 20px;
+  margin: 7px 20px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+
 }
 
 a{
@@ -19,6 +23,5 @@ a{
   font-size: 20px;
 }
 a:hover{
-  text-decoration: underline;
-  color:  #317773;
+  color:  #eeeeee;
 }
