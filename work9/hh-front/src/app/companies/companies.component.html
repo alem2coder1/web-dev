@@ -1,0 +1,9 @@
+<!-- companies.component.html -->
+<div *ngIf="companies">
+  <h2>Companies List</h2>
+  <ul>
+    <li *ngFor="let company of companies">
+      ID: {{ company.id }}, Name: {{ company.name }}
+    </li>
+  </ul>
+</div>

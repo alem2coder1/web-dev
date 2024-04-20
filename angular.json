@@ -1166,6 +1166,534 @@
           }
         }
       }
+    },
+    "hh-front": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/hh-front",
+      "sourceRoot": "projects/hh-front/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/hh-front",
+            "index": "projects/hh-front/src/index.html",
+            "browser": "projects/hh-front/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/hh-front/tsconfig.app.json",
+            "assets": [
+              "projects/hh-front/src/favicon.ico",
+              "projects/hh-front/src/assets"
+            ],
+            "styles": [
+              "projects/hh-front/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "hh-front:build:production"
+            },
+            "development": {
+              "buildTarget": "hh-front:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "hh-front:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/hh-front/tsconfig.spec.json",
+            "assets": [
+              "projects/hh-front/src/favicon.ico",
+              "projects/hh-front/src/assets"
+            ],
+            "styles": [
+              "projects/hh-front/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "hhh_front": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/hhh_front",
+      "sourceRoot": "projects/hhh_front/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/hhh_front",
+            "index": "projects/hhh_front/src/index.html",
+            "browser": "projects/hhh_front/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/hhh_front/tsconfig.app.json",
+            "assets": [
+              "projects/hhh_front/src/favicon.ico",
+              "projects/hhh_front/src/assets"
+            ],
+            "styles": [
+              "projects/hhh_front/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "hhh_front:build:production"
+            },
+            "development": {
+              "buildTarget": "hhh_front:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "hhh_front:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/hhh_front/tsconfig.spec.json",
+            "assets": [
+              "projects/hhh_front/src/favicon.ico",
+              "projects/hhh_front/src/assets"
+            ],
+            "styles": [
+              "projects/hhh_front/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "hh-fron": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/hh-fron",
+      "sourceRoot": "projects/hh-fron/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/hh-fron",
+            "index": "projects/hh-fron/src/index.html",
+            "browser": "projects/hh-fron/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/hh-fron/tsconfig.app.json",
+            "assets": [
+              "projects/hh-fron/src/favicon.ico",
+              "projects/hh-fron/src/assets"
+            ],
+            "styles": [
+              "projects/hh-fron/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "hh-fron:build:production"
+            },
+            "development": {
+              "buildTarget": "hh-fron:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "hh-fron:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/hh-fron/tsconfig.spec.json",
+            "assets": [
+              "projects/hh-fron/src/favicon.ico",
+              "projects/hh-fron/src/assets"
+            ],
+            "styles": [
+              "projects/hh-fron/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "hh-fro": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/hh-fro",
+      "sourceRoot": "projects/hh-fro/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/hh-fro",
+            "index": "projects/hh-fro/src/index.html",
+            "browser": "projects/hh-fro/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/hh-fro/tsconfig.app.json",
+            "assets": [
+              "projects/hh-fro/src/favicon.ico",
+              "projects/hh-fro/src/assets"
+            ],
+            "styles": [
+              "projects/hh-fro/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "hh-fro:build:production"
+            },
+            "development": {
+              "buildTarget": "hh-fro:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "hh-fro:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/hh-fro/tsconfig.spec.json",
+            "assets": [
+              "projects/hh-fro/src/favicon.ico",
+              "projects/hh-fro/src/assets"
+            ],
+            "styles": [
+              "projects/hh-fro/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "hh-fr": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/hh-fr",
+      "sourceRoot": "projects/hh-fr/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/hh-fr",
+            "index": "projects/hh-fr/src/index.html",
+            "browser": "projects/hh-fr/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/hh-fr/tsconfig.app.json",
+            "assets": [
+              "projects/hh-fr/src/favicon.ico",
+              "projects/hh-fr/src/assets"
+            ],
+            "styles": [
+              "projects/hh-fr/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "hh-fr:build:production"
+            },
+            "development": {
+              "buildTarget": "hh-fr:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "hh-fr:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/hh-fr/tsconfig.spec.json",
+            "assets": [
+              "projects/hh-fr/src/favicon.ico",
+              "projects/hh-fr/src/assets"
+            ],
+            "styles": [
+              "projects/hh-fr/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "hh-f": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/hh-f",
+      "sourceRoot": "projects/hh-f/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/hh-f",
+            "index": "projects/hh-f/src/index.html",
+            "browser": "projects/hh-f/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/hh-f/tsconfig.app.json",
+            "assets": [
+              "projects/hh-f/src/favicon.ico",
+              "projects/hh-f/src/assets"
+            ],
+            "styles": [
+              "projects/hh-f/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "hh-f:build:production"
+            },
+            "development": {
+              "buildTarget": "hh-f:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "hh-f:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/hh-f/tsconfig.spec.json",
+            "assets": [
+              "projects/hh-f/src/favicon.ico",
+              "projects/hh-f/src/assets"
+            ],
+            "styles": [
+              "projects/hh-f/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   },
   "cli": {
